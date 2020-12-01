@@ -44,8 +44,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.jeroenmols.lib'
-                artifactId = 'lib'
-                version = '0.0.1'
+                artifactId = 'library'
+                version = project.hasProperty("external_version") ? project.external_version : "local"
             }
         }
     }
